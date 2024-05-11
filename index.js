@@ -90,7 +90,8 @@ const mySchema=new mongoose.Schema({
  //posting data in database and sending email to the user.
  app.post('/data',upload.single("orderImage"),async(req,res)=>{
     const{name,email,address,number,size,medium,face,amount}=req.body;
-    const orderDate=new Date().toLocaleString('en-GB', { ti }));
+     const options = { timeZone: "IST" };
+    const orderDate=new Date().toLocaleString('en-US', options);
     
     const orderedImage=imagename;
     
