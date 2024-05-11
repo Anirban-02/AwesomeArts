@@ -115,8 +115,7 @@ const mySchema=new mongoose.Schema({
             }
         }
     )
-    //const imageLink='https://awesomearts.onrender.com/orderedImages/'+imagename;
-    const imageLink='http://localhost:5000/orderedImages/'+imagename;
+    const imageLink='https://awesomearts.onrender.com/orderedImages/'+imagename;
     let text = name;
     const myArray = text.split(" ");
     let first_name = myArray[0];
